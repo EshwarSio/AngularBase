@@ -1,0 +1,19 @@
+<div class="col-sm-8">
+    
+  <div class="p-5 mn-4 bg-light rounded-3" *ngIf="contactProfil">
+      <div class="container-fluid py-5">
+        <h5 class="display-4">{{contactProfil.name}}</h5>
+        <p class="col-md-8 fs-4">{{contactProfil.username}}</p>
+        <hr />
+        <p class="col-md-8">{{contactProfil.email}}</p>
+      </div>
+    </div>
+    <div class="p-5 mn-4 bg-light rounded-3" *ngIf="! contactProfil">
+      <div class="container-fluid py-5">
+        <h5 class="display-2">Bienvenue</h5>
+        <p class="col-md-8 fs-4">Choisissez un contact dans le menu de gauche.</p>
+        
+      </div>
+    </div>
+
+  </div>
